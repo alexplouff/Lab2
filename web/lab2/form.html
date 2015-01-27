@@ -11,8 +11,12 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <p><a href="pager"> Go to Lab2</a></p>
-        <p><a href="pager?color=blue"> Go to Lab2 -B</a></p> <!-- Query String Paramenter // Gets stored in 'request' object-->
-        <p><a href="lab2/form.html">Go To Lab 2c</a></p>
+        <h2>Lab 2 Form With Post</h2>
+        <form id="form1" name="form1" method="POST" action="../pager">
+            <input id="firstName" name="firstName" type="text" value="" />
+            <input id="lastName" name="lastName" type="text" value="" />
+            
+            <input type="submit" name="submit" value="Click Here" />
+        </form>
     </body>
 </html>
